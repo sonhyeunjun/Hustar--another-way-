@@ -14,7 +14,7 @@
 	href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
 	rel="stylesheet">
 <!-- css 파일 -->
-<link rel="stylesheet" href="/resource/css/common.css" type="text/css">
+<link rel="stylesheet" href="../resource/css/common.css" type="text/css">
 
 </head>
 <body>
@@ -55,9 +55,9 @@
 				
 				<%
 				//세션
-					String session_id = (String) session.getAttribute("SessionUserID");
+					String SESSION_ID = (String) session.getAttribute("SessionUserID");
 				//로그인하지 않았기
-					if( session_id  == null){
+					if( SESSION_ID  == null){
 				%>
 				<div class="col-lg-2">
 					<div class="header__right">
@@ -74,7 +74,7 @@
 					<div class="header__right">
 						<!-- 검색하기 -->
 						<a href="/member/logout.jsp"><span class="icon_lock-open"></span></a>
-                        <a href="/member/mypage.jsp"><%=session_id %>님<span class="icon_profile"></span></a>	
+                        <a href="/member/registerModify.jsp"><%=SESSION_ID %>님<span class="icon_profile"></span></a>	
                         
 					</div>
 				</div>
