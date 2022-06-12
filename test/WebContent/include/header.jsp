@@ -19,9 +19,9 @@
 </head>
 <body>
 	<%
-	String userID = null;
-	if (session.getAttribute("userID") != null) {
-		userID = (String) session.getAttribute("userID");
+	String userid = null;
+	if (session.getAttribute("userid") != null) {
+		userid = (String) session.getAttribute("userid");
 	}
 	%>
 	<!-- 화면 Loader 띄우기

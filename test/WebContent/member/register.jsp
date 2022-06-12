@@ -52,6 +52,7 @@
                       <h3 class="mb-5 text-uppercase">회원가입</h3>
       
       					<form method="post" action="registerSave.jsp" name="frm">
+      					<input type="hidden" name="chk" value="0">
                       	<div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
@@ -89,13 +90,13 @@
       
                         <div class="form-check form-check-inline mb-0 me-4">
                           <input class="form-check-input" type="radio" name="gender" id="femaleGender"
-                            value="woman" />
+                            value="F" />
                           <label class="form-check-label" for="femaleGender">여자</label>
                         </div>
       
                         <div class="form-check form-check-inline mb-0 me-4">
                           <input class="form-check-input" type="radio" name="gender" id="maleGender"
-                            value="man" />
+                            value="M" />
                           <label class="form-check-label" for="maleGender">남자</label>
                         </div>
                         </div>
@@ -114,12 +115,12 @@
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="text" id="form3Example90" class="form-control form-control-lg" name="userUniversity" />
+                        <input type="text" id="form3Example90" class="form-control form-control-lg" name="university" />
                         <label class="form-label" for="form3Example90">대학교</label>
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="email" id="form3Example97" class="form-control form-control-lg" name="userEmail" />
+                        <input type="email" id="form3Example97" class="form-control form-control-lg" name="email" />
                         <label class="form-label" for="form3Example97">이메일</label>
                       </div>
       

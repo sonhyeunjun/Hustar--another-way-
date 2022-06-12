@@ -1,35 +1,7 @@
-function fn_idcheck() {
-
-
-	let userid = document.frm.userid.value;
-	if (userid == "") {
-		alert("아이디 입력");
-		document.frm.userid.focus();
-		return false;
-	}
-	if (userid.length < 4 || userid.length > 12) {
-		alert("아이디는 4자~12자 사이로 입력해주세요.");
-		return false;
-	}
-	let url = "idcheck.jsp?userid=" + userid;
-	window.open(url, "중복 아이디", "width=300,height =200");
-
-}
-
 function fn_submit() {
 
 	let f = document.frm;
 
-	if (f.userid.value == "") {
-		alert("아이디 입력.");
-		f.userid.focus();
-		return false;
-
-	}
-	if (f.chk.value == "0") {
-		alert("아이디 중복체크를 해주세요");
-		return false;
-	}
 
 	if (f.username.value == "") {
 		alert("이름 입력.");
@@ -37,12 +9,7 @@ function fn_submit() {
 		return false;
 
 	}
-	if (f.pass.value == "") {
-		alert("비번 입력.");
-		f.pass.focus();
-		return false;
 
-	}
 	if (f.mobile.value == "") {
 		alert("번호 입력.");
 		f.mobile.focus();

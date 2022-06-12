@@ -49,15 +49,29 @@ background-color:white;
 </style>
 <div id = "div1">
 <%
-if(cnt == 0){
-out.print("사용가능한 아이디");
-} else {
-%>
 
-out.print("사용중 아이디");
+if( cnt == 0 ){
+
+	out.print("사용가능한 아이디 입니다.");
+%>
+<script>
+//https://runtoyourdream.tistory.com/211
+opener.document.frm.chk.value = "1";
+</script>
+<%
+}else{
+
+	out.print("이미 사용중인 아이디 입니다.");
+%>
+	<script>
+
+opener.document.frm.chk.value = "0";
+</script>
 <%
 }
 %>
+
+
 <br>
 <p>
 <button type="button" onclick="self.close();">닫기</button>

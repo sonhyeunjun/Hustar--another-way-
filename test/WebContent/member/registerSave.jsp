@@ -61,7 +61,7 @@
 	%>
 	<script>
 	alert("<%=userid%>님 회원등록을 완료");
-	location="/";
+	location="login.jsp";
 </script>
 	<%} else { %>
 	<script>
