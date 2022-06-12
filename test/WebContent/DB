@@ -1,0 +1,15 @@
+memberinfo »ý¼º
+--------------------------------
+
+create table memberinfo(
+userid varchar(50) not null,
+username varchar(50) not null,
+pass varchar(100) not null,
+mobile varchar(50) not null,
+gender enum('M','F') not null,
+birthday date not null,
+university varchar(50) not null,
+email varchar(50) not null,
+rdate datetime,
+primary key(userid)
+);
